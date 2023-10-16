@@ -28,7 +28,7 @@ const PropertyDetails = ({property}: {property:Property}) => {
                 width={1200}
                 height={800}
                 alt="main"
-                src="/images/living.jpg"
+                src={property.images[0]}
                 className="inline object-cover w-full rounded-l-xl aspect-video"
               />
             </div>

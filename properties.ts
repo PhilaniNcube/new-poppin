@@ -48,7 +48,7 @@ const properties = [
     beds: 2,
     baths: 2.5,
     price: 2780,
-    images: ['https://a0.muscache.com/im/pictures/miso/Hosting-731588256049922111/original/0a55157f-95e6-4740-86fa-9155e31a37a4.jpeg?im_w=1200', "https://a0.muscache.com/im/pictures/miso/Hosting-731588256049922111/original/89a61f17-f23a-4fce-81c7-d78850f0474a.jpeg?im_w=720", "https://a0.muscache.com/im/pictures/miso/Hosting-731588256049922111/original/ae677f3c-9097-49d9-943f-a07a12bb269f.jpeg?im_w=720", "https://a0.muscache.com/im/pictures/miso/Hosting-731588256049922111/original/fff9fbac-1b4d-49a8-b3e3-46b07ec15581.jpeg?im_w=720", "https://a0.muscache.com/im/pictures/miso/Hosting-731588256049922111/original/d75c6035-11b2-4695-8666-107d2b131400.jpeg?im_w=720"]
+  images: ["/images/masingita_towers_two/image_1.JPG", "/images/masingita_towers_two/image_2.JPG", "/images/masingita_towers_two/image_3.JPG", "/images/masingita_towers_two/image_4.JPG", "/images/masingita_towers_two/image_5.JPG", "/images/masingita_towers_two/image_6.JPG", "/images/masingita_towers_two/image_7.JPG", "/images/masingita_towers_two/image_8.JPG", "/images/masingita_towers_two/image_9.JPG", "/images/masingita_towers_two/image_10.JPG", "/images/masingita_towers_two/image_11.JPG", "/images/masingita_towers_two/image_12.JPG", "/images/masingita_towers_two/image_13.JPG", "/images/masingita_towers_two/image_14.JPG", "/images/masingita_towers_two/image_16.JPG"]
   },
 ]
 

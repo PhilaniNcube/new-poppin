@@ -144,6 +144,7 @@ const PropertyDetails = ({property}: {property:Property}) => {
               name="redirect"
               value="https://web3forms.com/success"
             ></input>
+            <input type="hidden" name="redirect" value="https://web3forms.com/success"></input>
 
             <div className="flex flex-col md:flex-row items-between md:items-center md:justify-between">
               <div className="flex flex-col md:mr-16">

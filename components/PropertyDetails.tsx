@@ -136,7 +136,7 @@ const PropertyDetails = ({property}: {property:Property}) => {
             <input
               type="hidden"
               name="from_name"
-              value="Pop Inn Website"
+              value="Popp Inn Website"
             ></input>
 
             <input

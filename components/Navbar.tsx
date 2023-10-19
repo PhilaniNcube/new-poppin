@@ -34,9 +34,9 @@ const Navbar = () => {
           <Link href="/">Home</Link>
           <Link href="/properties">Properties</Link>
           <Link href="/travel">Travel</Link>
-          <Link href="/about">About Us</Link>
+          <Link href="/contact">Contact Us</Link>
 
-          <Link href="/properties/bryanston" passHref>
+          <Link href="/properties" passHref>
             <Button className="text-white font-montBold text-md bg-red-500 px-4 py-2 rounded-full">
               Book Now
             </Button>
@@ -119,14 +119,14 @@ const Navbar = () => {
               Travel
             </Link>
             <Link
-              href="/about"
+              href="/contact"
               onClick={() => setShow(false)}
               className="block rounded-lg py-2 px-4 text-sm hover:bg-gray-100 hover:shadow"
             >
-              About Us
+              Contact Us
             </Link>
             <Link
-              href="/properties/bryanston"
+              href="/properties"
               className="block rounded-lg bg-red-500 py-2 px-4 text-sm text-white hover:bg-gray-400"
             >
               Book Now

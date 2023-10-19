@@ -22,10 +22,12 @@ const properties = [
     title: 'Masingita Towers 2',
     description: 'Entire serviced apartment in Sandton, South Africa',
     type: 'Apartment',
-    links: [{
-      platform: "AirBnB",
-      href: "https://www.airbnb.co.za/rooms/731588256049922111?locale=en&_set_bev_on_new_domain=1696280310_NWVmNTlhMjVjMmNh&source_impression_id=p3_1696280765_OoToFRfrLlU4tuZV"
-    }],
+    links: [
+    //   {
+    //   platform: "AirBnB",
+    //   href: "https://www.airbnb.co.za/rooms/731588256049922111?locale=en&_set_bev_on_new_domain=1696280310_NWVmNTlhMjVjMmNh&source_impression_id=p3_1696280765_OoToFRfrLlU4tuZV"
+    // }
+  ],
     guests: 4,
     bedrooms: 2,
     beds: 2,
@@ -38,10 +40,12 @@ const properties = [
     title: 'Masingita Towers 3',
     description: 'A luxury apartment in the heart of Sandotn',
     type: 'Apartment',
-        links: [ {
-      platform: "AirBnB",
-      href: "https://www.airbnb.co.za/rooms/46767440?locale=en&_set_bev_on_new_domain=1696280310_NWVmNTlhMjVjMmNh&source_impression_id=p3_1696280569_UwG9pgHxug4TqQPI"
-    }],
+        links: [
+    //       {
+    //   platform: "AirBnB",
+    //   href: "https://www.airbnb.co.za/rooms/46767440?locale=en&_set_bev_on_new_domain=1696280310_NWVmNTlhMjVjMmNh&source_impression_id=p3_1696280569_UwG9pgHxug4TqQPI"
+    // }
+  ],
     guests: 4,
     bedrooms: 2,
     beds: 2,

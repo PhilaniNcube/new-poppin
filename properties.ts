@@ -18,8 +18,8 @@ const properties = [
     price: 1500,
     images: ['/images/living.jpg', "/images/kitchen-small-3.jpg", "/images/kitchen-small.jpg", "/images/tv-1.jpg", "/images/welcome.jpg"]
   },  {
-    slug: 'masingita_towers_2',
-    title: 'Masingita Towers 2',
+    slug: 'morningside_2',
+    title: 'Morningside 2',
     description: 'Entire serviced apartment in Sandton, South Africa',
     type: 'Apartment',
     links: [
@@ -36,8 +36,8 @@ const properties = [
   images: ["/images/masingita_towers_two/image_1.JPG", "/images/masingita_towers_two/image_2.JPG", "/images/masingita_towers_two/image_3.JPG", "/images/masingita_towers_two/image_4.JPG", "/images/masingita_towers_two/image_5.JPG", "/images/masingita_towers_two/image_6.JPG", "/images/masingita_towers_two/image_7.JPG", "/images/masingita_towers_two/image_8.JPG", "/images/masingita_towers_two/image_9.JPG", "/images/masingita_towers_two/image_10.JPG", "/images/masingita_towers_two/image_11.JPG", "/images/masingita_towers_two/image_12.JPG", "/images/masingita_towers_two/image_13.JPG", "/images/masingita_towers_two/image_14.JPG", "/images/masingita_towers_two/image_16.JPG"]
   },
   {
-    slug: 'masingita_towers_3',
-    title: 'Masingita Towers 3',
+    slug: 'morningside_3',
+    title: 'Morningside 3',
     description: 'A luxury apartment in the heart of Sandotn',
     type: 'Apartment',
         links: [

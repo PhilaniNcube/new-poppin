@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { formatter } from "@/lib/utils";
+import ImageGallery from "@/app/properties/[id]/_components/image-gallery";
 
 const PropertyDetails = ({property}: {property:Property}) => {
 
@@ -52,6 +53,7 @@ const PropertyDetails = ({property}: {property:Property}) => {
               );
             })}
           </div>
+          {/* <ImageGallery images={property.images} /> */}
         </div>
 
         <div className="flex-col justify-between mt-4 md:flex-row">
@@ -80,7 +82,7 @@ const PropertyDetails = ({property}: {property:Property}) => {
                 </Link>
               ))}
             </div>
-            <div className="grid grid-cols-1 gap-3 mt-4 sm:grid-cols-2 md:grid-cols-3">
+            {/* <div className="grid grid-cols-1 gap-3 mt-4 sm:grid-cols-2 md:grid-cols-3">
               {property.images.map((image, index) => (
                 <Image
                   src={image}
@@ -91,8 +93,9 @@ const PropertyDetails = ({property}: {property:Property}) => {
                   className="object-cover w-full rounded-md aspect-video"
                 />
               ))}
-            </div>
+            </div> */}
           </div>
+          <ImageGallery images={property.images} />
 
           {/* <Link
             href="https://www.booking.com/hotel/za/pop-inn-modern-apartment-in-heart-of-bryanston.en-gb.html?aid=1258472&label=Share-lfWNCr%401630515174"
@@ -144,7 +147,11 @@ const PropertyDetails = ({property}: {property:Property}) => {
               name="redirect"
               value="https://web3forms.com/success"
             ></input>
-            <input type="hidden" name="redirect" value="https://web3forms.com/success"></input>
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            ></input>
 
             <div className="flex flex-col md:flex-row items-between md:items-center md:justify-between">
               <div className="flex flex-col md:mr-16">

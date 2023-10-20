@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import {Resend} from 'resend'
 
-const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY)
+const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY!)
 
 export default async function ContactPage() {
 
@@ -19,12 +19,15 @@ export default async function ContactPage() {
     const email = formData.get("email")
     const message = formData.get("message")
 
-    await resend.emails.send({
+    const res = await resend.emails.send({
       from: "bookings@poppinn.co.za",
       to: "bookings@poppinn.co.za",
       subject: "Contact Form Submission",
       html: `<p>Name: ${fullName}</p><p>Email: ${email}</p><p>Message: ${message}</p>`
     });
+
+
+    console.log({ email, message, fullName, res})
 
     return {
       redirect: {

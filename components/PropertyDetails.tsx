@@ -6,6 +6,8 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import { formatter } from "@/lib/utils";
 import ImageGallery from "@/app/properties/[id]/_components/image-gallery";
+import { Label } from "./ui/label";
+import { Input } from "./ui/input";
 
 const PropertyDetails = ({property}: {property:Property}) => {
 
@@ -147,21 +149,17 @@ const PropertyDetails = ({property}: {property:Property}) => {
               name="redirect"
               value="https://web3forms.com/success"
             ></input>
-            <input
-              type="hidden"
-              name="redirect"
-              value="https://web3forms.com/success"
-            ></input>
+
 
             <div className="flex flex-col md:flex-row items-between md:items-center md:justify-between">
               <div className="flex flex-col md:mr-16">
-                <label
+                <Label
                   htmlFor="email"
                   className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
                 >
                   Email
-                </label>
-                <input
+                </Label>
+                <Input
                   id="email"
                   type="email"
                   required
@@ -172,13 +170,13 @@ const PropertyDetails = ({property}: {property:Property}) => {
                 />
               </div>
               <div className="flex flex-col md:mr-16">
-                <label
+                <Label
                   htmlFor="firstName"
                   className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
                 >
                   First Name
-                </label>
-                <input
+                </Label>
+                <Input
                   id="firstName"
                   type="text"
                   name="firstName"
@@ -193,13 +191,13 @@ const PropertyDetails = ({property}: {property:Property}) => {
 
             <div className="flex flex-col mt-6 md:flex-row items-between md:items-center md:justify-between">
               <div className="flex flex-col md:mr-16">
-                <label
+                <Label
                   htmlFor="lastName"
                   className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
                 >
                   Last Name
-                </label>
-                <input
+                </Label>
+                <Input
                   id="lastName"
                   type="text"
                   name="lastName"
@@ -211,13 +209,13 @@ const PropertyDetails = ({property}: {property:Property}) => {
                 />
               </div>
               <div className="flex flex-col md:mr-16">
-                <label
+                <Label
                   htmlFor="guests"
                   className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
                 >
                   How Many Guests
-                </label>
-                <input
+                </Label>
+                <Input
                   id="guests"
                   type="number"
                   name="guests"
@@ -234,13 +232,13 @@ const PropertyDetails = ({property}: {property:Property}) => {
 
             <div className="flex flex-col mt-6 md:flex-row items-between md:items-center md:justify-between">
               <div className="flex flex-col md:mr-16">
-                <label
+                <Label
                   htmlFor="startDate"
                   className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
                 >
                   Check In
-                </label>
-                <input
+                </Label>
+                <Input
                   id="startDate"
                   type="date"
                   name="startDate"
@@ -251,13 +249,13 @@ const PropertyDetails = ({property}: {property:Property}) => {
                 />
               </div>
               <div className="flex flex-col md:mr-16">
-                <label
+                <Label
                   htmlFor="endDate"
                   className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
                 >
                   Check Out
-                </label>
-                <input
+                </Label>
+                <Input
                   id="endDate"
                   type="date"
                   name="endDate"
@@ -269,12 +267,12 @@ const PropertyDetails = ({property}: {property:Property}) => {
               </div>
             </div>
 
-            <button
+            <Button
               type="submit"
               className="w-full h-12 px-4 py-2 mt-4 text-sm text-white bg-red-500 rounded-lg hover:bg-gray-400"
             >
               Submit
-            </button>
+            </Button>
           </form>
         </div>
       </div>

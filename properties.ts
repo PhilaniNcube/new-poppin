@@ -16,7 +16,7 @@ const properties = [
     beds: 2,
     baths: 2,
     price: 1500,
-    images: ['/images/living.jpg', "/images/kitchen-small-3.jpg", "/images/kitchen-small.jpg", "/images/tv-1.jpg", "/images/welcome.jpg"]
+    images: ['/images/bedroom-blue-2.jpg', "/images/bedroom-blue-3.jpg", "/images/kitchen-large.jpg", "/images/dining.jpg", "/images/welcome.jpg", "/images/building.jpg", "/images/bathroom-2.jpg", "/images/balcony.jpg", "/images/bathroom.jpg", "/images/bedroom-yellow-2.jpg", "/images/bedroom-yellow.jpg", "/images/kitchen-coffee.jpg", "/images/living-2.jpg", "/images/lounge.jpg"]
   },  {
     slug: 'morningside_2',
     title: 'Morningside 2',

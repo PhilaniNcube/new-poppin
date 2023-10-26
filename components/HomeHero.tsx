@@ -13,7 +13,7 @@ export default function HomeHero() {
           alt="Holiday Rental"
           className="absolute inset-0 object-cover w-full h-full"
           height="1080"
-          src="/images/masingita_towers/main_bedroom_2.jpeg"
+          src="/images/bedroom-blue-2.jpg"
           style={{
             aspectRatio: "960/1080",
             objectFit: "cover",
@@ -40,7 +40,7 @@ export default function HomeHero() {
           alt="Find Accommodation"
           className="absolute inset-0 object-cover w-full h-full"
           height="1080"
-          src="/images/masingita_towers_two/image_20.JPG"
+          src="/images/masingita_towers_two/image_8.JPG"
           style={{
             aspectRatio: "960/1080",
             objectFit: "cover",

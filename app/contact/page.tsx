@@ -20,8 +20,8 @@ export default async function ContactPage() {
     const message = formData.get("message")
 
     const res = await resend.emails.send({
-      from: "bookings@poppinn.co.za",
-      to: "bookings@poppinn.co.za",
+      from: "info@poppinn.co.za",
+      to: "info@poppinn.co.za",
       subject: "Contact Form Submission",
       html: `<p>Name: ${fullName}</p><p>Email: ${email}</p><p>Message: ${message}</p>`
     });
@@ -96,7 +96,7 @@ export default async function ContactPage() {
             href="mailto:bookings@poppinn.co.za"
             className="underline text-blue-500 hover:text-blue-400 ml-2"
           >
-            bookings@poppinn.co.za
+            info@poppinn.co.za
           </a>
         </p>
       </div>

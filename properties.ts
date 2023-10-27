@@ -35,7 +35,7 @@ const properties = [
     beds: 2,
     baths: 2.5,
     price: 2580,
-  images: ["/images/masingita_towers_two/image_1.JPG", "/images/masingita_towers_two/image_2.JPG", "/images/masingita_towers_two/image_3.JPG", "/images/masingita_towers_two/image_4.JPG", "/images/masingita_towers_two/image_5.JPG", "/images/masingita_towers_two/image_6.JPG", "/images/masingita_towers_two/image_7.JPG", "/images/masingita_towers_two/image_8.JPG", "/images/masingita_towers_two/image_9.JPG", "/images/masingita_towers_two/image_10.JPG", "/images/masingita_towers_two/image_11.JPG", "/images/masingita_towers_two/image_12.JPG", "/images/masingita_towers_two/image_13.JPG", "/images/masingita_towers_two/image_14.JPG", "/images/masingita_towers_two/image_16.JPG"]
+  images: ["/images/masingita_towers_two/image_1.JPG", "/images/masingita_towers_two/image_2.JPG", "/images/masingita_towers_two/image_3.JPG", "/images/masingita_towers_two/image_4.JPG", "/images/masingita_towers_two/image_5.JPG", "/images/masingita_towers_two/image_6.JPG", "/images/masingita_towers_two/image_7.JPG", "/images/masingita_towers_two/image_8.JPG", "/images/masingita_towers_two/image_9.JPG", "/images/masingita_towers_two/image_10.JPG", "/images/masingita_towers_two/image_11.JPG", "/images/masingita_towers_two/image_12.JPG", "/images/masingita_towers_two/image_13.JPG", "/images/masingita_towers_two/image_14.JPG"]
   },
   {
     slug: 'morningside_3',
@@ -54,7 +54,7 @@ const properties = [
     beds: 2,
     baths: 2.5,
     price: 2780,
-    images: ["/images/masingita_towers/main_bedroom.jpeg", "/images/masingita_towers/living_room.jpeg", "/images/masingita_towers/sinks.jpeg", "/images/masingita_towers/balcony.jpeg", "/images/masingita_towers/bathroom_4.jpeg", "/images/masingita_towers/bed.jpeg", "/images/masingita_towers/balcony_2.jpeg", "/images/masingita_towers/bathroom.jpeg", "/images/masingita_towers/bedroom.jpeg", "/images/masingita_towers/dining.jpeg", "/images/masingita_towers/kitchen.jpeg", "/images/masingita_towers/living_room_2.jpeg", "/images/masingita_towers/smeg.jpeg"]
+    images: ["/images/masingita_towers/main_bedroom.jpeg", "/images/masingita_towers/main_bedroom_3.jpeg", "/images/masingita_towers/living_room.jpeg", "/images/masingita_towers/sinks.jpeg", "/images/masingita_towers/balcony.jpeg", "/images/masingita_towers/bathroom_4.jpeg", "/images/masingita_towers/bed.jpeg", "/images/masingita_towers/balcony_2.jpeg", "/images/masingita_towers/bathroom.jpeg", "/images/masingita_towers/bedroom.jpeg", "/images/masingita_towers/dining.jpeg", "/images/masingita_towers/kitchen.jpeg", "/images/masingita_towers/living_room_2.jpeg", "/images/masingita_towers/smeg.jpeg", "/images/masingita_towers/kitchen_counter.jpeg", "/images/masingita_towers/pillow.jpeg", "/images/masingita_towers/lounge_3.jpeg"]
   },
 
 ]

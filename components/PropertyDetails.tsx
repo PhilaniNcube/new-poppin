@@ -57,28 +57,6 @@ const PropertyDetails = ({property}: {property:Property}) => {
           </div>
           {/* <ImageGallery images={property.images} /> */}
         </div>
-
-        <div>
-          {property.text.map((item, index) => (
-            <p key={index} className="leading-7 max-w-[90ch] text-sm font-montLight">
-              {item}
-            </p>
-          ))}
-        </div>
-
-        <div className="flex-col justify-between mt-4 md:flex-row">
-          <div>
-            <h2 className="text-lg font-montMedium">{property.type}</h2>
-            <p className="text-base font-montLight">
-              {property.guests} guests - {property.bedrooms} bedrooms -{" "}
-              {property.beds} beds - {property.baths} baths
-            </p>
-          </div>
-
-          <h2 className="text-lg font-montMedium">
-            From {formatter(property.price)}/ night
-          </h2>
-        </div>
       </div>
       <div className="grid grid-cols-1 gap-6 px-6 mx-auto my-8 md:grid-cols-2 max-w-7xl md:px-4 lg:px-0">
         <div className="grid w-full grid-cols-1 gap-6 ">
@@ -126,6 +104,30 @@ const PropertyDetails = ({property}: {property:Property}) => {
         </div>
 
         <div className="px-6">
+          <div className="flex-col justify-between mt-4 md:flex-row">
+            <div>
+              <h2 className="text-lg font-montMedium">{property.type}</h2>
+              <p className="text-base font-montLight">
+                {property.guests} guests - {property.bedrooms} bedrooms -{" "}
+                {property.beds} beds - {property.baths} baths
+              </p>
+            </div>
+
+            <h2 className="text-xl font-bold text-red-600 font-mont">
+              From {formatter(property.price)}/ night
+            </h2>
+          </div>
+          <div>
+            {property.text.map((item, index) => (
+              <p
+                key={index}
+                className="leading-7 mb-2 max-w-[90ch] text-sm font-montLight"
+              >
+                {item}
+              </p>
+            ))}
+          </div>
+
           <h2 className="mb-4 text-2xl text-red-500 font-montBold">
             Contact Us To Book A Stay
           </h2>
@@ -157,7 +159,6 @@ const PropertyDetails = ({property}: {property:Property}) => {
               name="redirect"
               value="https://web3forms.com/success"
             ></input>
-
 
             <div className="flex flex-col md:flex-row items-between md:items-center md:justify-between">
               <div className="flex flex-col md:mr-16">

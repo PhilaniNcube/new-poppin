@@ -59,7 +59,7 @@ export default function HomepageAbout() {
           className="block w-full px-6 py-3 mx-auto mt-6 text-base font-medium text-center text-white bg-red-600 rounded-full hover:bg-red-400"
           href="/contact"
         >
-          Get Started
+         Chat to us
         </Link>
       </div>
     </section>

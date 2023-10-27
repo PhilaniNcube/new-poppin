@@ -15,7 +15,7 @@ export default function Home() {
       <HomepageAbout />
       <PropertiesGrid />
       {/* <HomeSectionTwo /> */}
-      <ContactForm />
+      {/* <ContactForm /> */}
     </main>
   );
 }

@@ -3,6 +3,7 @@ const properties = [
     slug: 'bryanston',
     title: 'Bryanston',
     description: 'A beautiful apartment in the heart of Bryanston',
+    text: ['This modern apartment is conveniently located close to popular shopping malls like Bryanston and Morningside Shopping Centre as well as Nicolway. It&apos;s a mere 8km from Sandton City and the Sandton Gautrain Station.', 'Thanks to uncapped WiFi, kickback and enjoy your favourite shows on Netflix, Showmax, YouTube and other streaming sites from the comfort of the lounge or the main bedroom.'],
     type: 'Apartment',
     links: [{
       platform: 'Booking.com',
@@ -21,6 +22,7 @@ const properties = [
     slug: 'morningside_2',
     title: 'Morningside 2',
     description: 'Entire serviced apartment in Sandton, South Africa',
+    text: ['This luxurious and spacious 2 bedroom, 2.5 bathroom apartment is located in the heart of Sandton. It is a 5 minute drive from Sandton City Mall as well as the Gautrain Station.', "This fully furnished apartment is ideal for the modern business individual, family or couple. The apartment includes uncapped Wifi, smart TVs and smeg appliances. Both bedrooms include an en-suite bathroom and there is a guest bathroom as well.", "This apartment is perfect for those that enjoy luxurious, comfort and convenience."],
     type: 'Apartment',
     links: [
     //   {
@@ -39,6 +41,7 @@ const properties = [
     slug: 'morningside_3',
     title: 'Morningside 3',
     description: 'A luxury apartment in the heart of Sandotn',
+   text: ['This luxurious and spacious apartment boasts 2 bedroom with King Beds as well as 2.5 bathrooms.  It is located in the heart of Sandton with Sandton City Mall and the Gautrain station being a mere 5 minute drive.', "This fully furnished apartment is ideal for the modern business individual, family or couple. The apartment includes uncapped Wifi, smart TVs and smeg appliances. Both bedrooms include an en-suite bathroom and there is a guest bathroom as well. ", "This apartment is perfect for those that enjoy luxurious, comfort and convenience."],
     type: 'Apartment',
         links: [
     //       {

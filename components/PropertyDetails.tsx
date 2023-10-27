@@ -58,6 +58,14 @@ const PropertyDetails = ({property}: {property:Property}) => {
           {/* <ImageGallery images={property.images} /> */}
         </div>
 
+        <div>
+          {property.text.map((item, index) => (
+            <p key={index} className="leading-7 max-w-[90ch] text-sm font-montLight">
+              {item}
+            </p>
+          ))}
+        </div>
+
         <div className="flex-col justify-between mt-4 md:flex-row">
           <div>
             <h2 className="text-lg font-montMedium">{property.type}</h2>

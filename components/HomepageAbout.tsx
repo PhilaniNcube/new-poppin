@@ -9,23 +9,15 @@ import Link from "next/link";
 export default function HomepageAbout() {
   return (
     <section className="relative flex flex-col items-center justify-center container w-full h-screen ">
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        <div className="px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl text-gray-800 dark:text-gray-100">
-            About Us
-          </h1>
-          <p className="mt-4 text-xl text-gray-600 dark:text-gray-300">
-            Popp Inn Property is a dynamic upmarket property management company
-            that is passionate about people and the leisure industry.
-          </p>
-          <Image
-            src="/images/building.jpg"
-            width={1920}
-            height={1280}
-            alt="Building"
-            className="w-full object-cover"
-          />
-        </div>
+      <h1 className="text-4xl text-center font-bold sm:text-5xl md:text-6xl text-gray-800 dark:text-gray-100">
+        About Us
+      </h1>
+      <p className="mt-4 text-xl text-center max-w-[50ch] max-auto text-gray-600 dark:text-gray-300 py-8">
+        Popp Inn Property is a dynamic upmarket property management company that
+        is passionate about people and the leisure industry.
+      </p>
+      <div className="flex flex-col items-center justify-center text-center">
+        <div className="px-4 sm:px-6 lg:px-8"></div>
         <div className="w-full">
           <p className="text-md leading-7 mb-3">
             We specialise in two areas, helping investors earn a return on their
@@ -64,7 +56,7 @@ export default function HomepageAbout() {
 
       <div>
         <Link
-          className="mt-6 mx-auto block text-center w-full max-w-md px-6 py-3 text-base font-medium text-white bg-red-600 hover:bg-red-400 rounded-full"
+          className="mt-6 mx-auto block text-center w-full  px-6 py-3 text-base font-medium text-white bg-red-600 hover:bg-red-400 rounded-full"
           href="/contact"
         >
           Get Started

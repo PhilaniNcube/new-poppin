@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { redirect } from "next/navigation";
 import {Resend} from 'resend'
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY!)
@@ -29,12 +30,7 @@ export default async function ContactPage() {
 
     console.log({ email, message, fullName, res})
 
-    return {
-      redirect: {
-        destination: "/",
-        permanent: false,
-      },
-    };
+    redirect("/thank-you")
 
   }
 

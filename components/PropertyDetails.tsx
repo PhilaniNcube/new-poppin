@@ -159,6 +159,7 @@ const router = useRouter()
                     id="email"
                     type="email"
                     required
+                    name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="flex items-center w-64 h-10 pl-3 text-sm font-normal text-gray-600 bg-white border border-gray-300 rounded shadow focus:outline-none focus:border focus:border-gray-700"

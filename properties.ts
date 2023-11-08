@@ -18,7 +18,27 @@ const properties = [
     baths: 2,
     price: 1500,
     images: ['/images/bedroom-blue-2.jpg', "/images/bedroom-blue-3.jpg", "/images/kitchen-large.jpg", "/images/dining.jpg", "/images/welcome.jpg", "/images/building.jpg", "/images/bathroom-2.jpg", "/images/balcony.jpg", "/images/bathroom.jpg", "/images/bedroom-yellow-2.jpg", "/images/bedroom-yellow.jpg", "/images/kitchen-coffee.jpg", "/images/living-2.jpg", "/images/lounge.jpg"]
-  },  {
+  },
+    {
+    slug: 'morningside_1',
+    title: 'Morningside 1',
+    description: 'contemporary 2 bedroom and 2 bathroom apartment is located in the heart of Sandton.',
+    text: ['This contemporary 2 bedroom and 2 bathroom apartment is located in the heart of Sandton. It is a 5 minute drive from Sandton City Mall as well as the Gautrain Station.', "The apartment includes uncapped Wifi, smart TVs and smeg appliances. Both bedrooms include an en-suite bathroom and there is a guest bathroom as well. This fully furnished apartment is ideal for those who enjoy luxury, comfort and convenience. Whether your travelling solo, as a couple, a family or on a business trip; this one is definitely the one to choose."],
+    type: 'Apartment',
+    links: [
+    //   {
+    //   platform: "AirBnB",
+    //   href: "https://www.airbnb.co.za/rooms/731588256049922111?locale=en&_set_bev_on_new_domain=1696280310_NWVmNTlhMjVjMmNh&source_impression_id=p3_1696280765_OoToFRfrLlU4tuZV"
+    // }
+  ],
+    guests: 4,
+    bedrooms: 2,
+    beds: 2,
+    baths: 2.5,
+    price: 2580,
+  images: ["/images/morningside_1/3.jpeg", "/images/morningside_1/1.jpeg", "/images/morningside_1/5.jpeg", "/images/morningside_1/4.jpeg", "/images/morningside_1/10.jpeg", "/images/morningside_1/6.jpeg", "/images/morningside_1/7.jpeg", "/images/morningside_1/8.jpeg", "/images/morningside_1/9.jpeg", "/images/morningside_1/2.jpeg", "/images/morningside_1/11.jpeg", "/images/morningside_1/12.jpeg", "/images/morningside_1/13.jpeg", "/images/morningside_1/14.jpeg"]
+  },
+  {
     slug: 'morningside_2',
     title: 'Morningside 2',
     description: 'Entire serviced apartment in Sandton, South Africa',
@@ -37,6 +57,7 @@ const properties = [
     price: 2580,
   images: ["/images/masingita_towers_two/image_1.JPG", "/images/masingita_towers_two/image_2.JPG", "/images/masingita_towers_two/image_3.JPG", "/images/masingita_towers_two/image_4.JPG", "/images/masingita_towers_two/image_5.JPG", "/images/masingita_towers_two/image_6.JPG", "/images/masingita_towers_two/image_7.JPG", "/images/masingita_towers_two/image_8.JPG", "/images/masingita_towers_two/image_9.JPG", "/images/masingita_towers_two/image_10.JPG", "/images/masingita_towers_two/image_11.JPG", "/images/masingita_towers_two/image_12.JPG", "/images/masingita_towers_two/image_13.JPG", "/images/masingita_towers_two/image_14.JPG"]
   },
+
   {
     slug: 'morningside_3',
     title: 'Morningside 3',

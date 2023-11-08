@@ -8,6 +8,11 @@ import { formatter } from "@/lib/utils";
 import ImageGallery from "@/app/properties/[id]/_components/image-gallery";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
+import { Resend } from "resend";
+import { useRouter } from "next/navigation";
+import { bookingAction } from "@/lib/actions";
+
+
 
 const PropertyDetails = ({property}: {property:Property}) => {
 
@@ -17,6 +22,10 @@ const PropertyDetails = ({property}: {property:Property}) => {
     const [startDate, setStartDate] = useState("");
     const [endDate, setEndDate] = useState("");
     const [guests, setGuests] = useState("1");
+
+const router = useRouter()
+
+
 
   return (
     <Fragment>
@@ -126,163 +135,142 @@ const PropertyDetails = ({property}: {property:Property}) => {
                 {item}
               </p>
             ))}
-          </div>
 
-          <h2 className="mb-4 text-2xl text-red-500 font-montBold">
-            Contact Us To Book A Stay
-          </h2>
-          <form
-            action="https://api.web3forms.com/submit"
-            method="POST"
-            className="w-full text-gray-700"
-          >
-            <input
-              type="hidden"
-              name="access_key"
-              value={process.env.NEXT_PUBLIC_WEBFORMS_API}
-            ></input>
+            <h2 className="mb-4 text-2xl text-red-500 font-montBold">
+              Contact Us To Book A Stay
+            </h2>
+            <form
+              // action="https://api.web3forms.com/submit"
+              // method="POST"
 
-            <input
-              type="hidden"
-              name="subject"
-              value="New Booking Enquiry"
-            ></input>
-
-            <input
-              type="hidden"
-              name="from_name"
-              value="Popp Inn Website"
-            ></input>
-
-            <input
-              type="hidden"
-              name="redirect"
-              value="https://web3forms.com/success"
-            ></input>
-
-            <div className="flex flex-col md:flex-row items-between md:items-center md:justify-between">
-              <div className="flex flex-col md:mr-16">
-                <Label
-                  htmlFor="email"
-                  className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
-                >
-                  Email
-                </Label>
-                <Input
-                  id="email"
-                  type="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="flex items-center w-64 h-10 pl-3 text-sm font-normal text-gray-600 bg-white border border-gray-300 rounded shadow focus:outline-none focus:border focus:border-gray-700"
-                  placeholder="Email"
-                />
-              </div>
-              <div className="flex flex-col md:mr-16">
-                <Label
-                  htmlFor="firstName"
-                  className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
-                >
-                  First Name
-                </Label>
-                <Input
-                  id="firstName"
-                  type="text"
-                  name="firstName"
-                  required
-                  value={firstName}
-                  onChange={(e) => setFirstName(e.target.value)}
-                  className="flex items-center w-64 h-10 pl-3 text-sm font-normal text-gray-600 bg-white border border-gray-300 rounded shadow focus:outline-none focus:border focus:border-gray-700"
-                  placeholder="First Name"
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-col mt-6 md:flex-row items-between md:items-center md:justify-between">
-              <div className="flex flex-col md:mr-16">
-                <Label
-                  htmlFor="lastName"
-                  className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
-                >
-                  Last Name
-                </Label>
-                <Input
-                  id="lastName"
-                  type="text"
-                  name="lastName"
-                  required
-                  value={lastName}
-                  onChange={(e) => setLastName(e.target.value)}
-                  className="flex items-center w-64 h-10 pl-3 text-sm font-normal text-gray-600 bg-white border border-gray-300 rounded shadow focus:outline-none focus:border focus:border-gray-700"
-                  placeholder="Last Name"
-                />
-              </div>
-              <div className="flex flex-col md:mr-16">
-                <Label
-                  htmlFor="guests"
-                  className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
-                >
-                  How Many Guests
-                </Label>
-                <Input
-                  id="guests"
-                  type="number"
-                  name="guests"
-                  min={1}
-                  max={4}
-                  required
-                  value={guests}
-                  onChange={(e) => setGuests(e.target.value)}
-                  className="flex items-center w-64 h-10 pl-3 text-sm font-normal text-gray-600 bg-white border border-gray-300 rounded shadow focus:outline-none focus:border focus:border-gray-700"
-                  placeholder="First Name"
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-col mt-6 md:flex-row items-between md:items-center md:justify-between">
-              <div className="flex flex-col md:mr-16">
-                <Label
-                  htmlFor="startDate"
-                  className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
-                >
-                  Check In
-                </Label>
-                <Input
-                  id="startDate"
-                  type="date"
-                  name="startDate"
-                  required
-                  value={startDate}
-                  onChange={(e) => setStartDate(e.target.value)}
-                  className="flex items-center w-64 h-10 pl-3 text-sm font-normal text-gray-600 bg-white border border-gray-300 rounded shadow focus:outline-none focus:border focus:border-gray-700"
-                />
-              </div>
-              <div className="flex flex-col md:mr-16">
-                <Label
-                  htmlFor="endDate"
-                  className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
-                >
-                  Check Out
-                </Label>
-                <Input
-                  id="endDate"
-                  type="date"
-                  name="endDate"
-                  required
-                  value={endDate}
-                  onChange={(e) => setEndDate(e.target.value)}
-                  className="flex items-center w-64 h-10 pl-3 text-sm font-normal text-gray-600 bg-white border border-gray-300 rounded shadow focus:outline-none focus:border focus:border-gray-700"
-                />
-              </div>
-            </div>
-
-            <Button
-              type="submit"
-              className="w-full h-12 px-4 py-2 mt-4 text-sm text-white bg-red-500 rounded-lg hover:bg-gray-400"
+              className="w-full text-gray-700"
             >
-              Submit
-            </Button>
-          </form>
+              <input type="hidden" name="property_id" value={property.title}></input>
+
+              <div className="flex flex-col md:flex-row items-between md:items-center md:justify-between">
+                <div className="flex flex-col md:mr-16">
+                  <Label
+                    htmlFor="email"
+                    className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
+                  >
+                    Email
+                  </Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="flex items-center w-64 h-10 pl-3 text-sm font-normal text-gray-600 bg-white border border-gray-300 rounded shadow focus:outline-none focus:border focus:border-gray-700"
+                    placeholder="Email"
+                  />
+                </div>
+                <div className="flex flex-col md:mr-16">
+                  <Label
+                    htmlFor="firstName"
+                    className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
+                  >
+                    First Name
+                  </Label>
+                  <Input
+                    id="firstName"
+                    type="text"
+                    name="firstName"
+                    required
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    className="flex items-center w-64 h-10 pl-3 text-sm font-normal text-gray-600 bg-white border border-gray-300 rounded shadow focus:outline-none focus:border focus:border-gray-700"
+                    placeholder="First Name"
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col mt-6 md:flex-row items-between md:items-center md:justify-between">
+                <div className="flex flex-col md:mr-16">
+                  <Label
+                    htmlFor="lastName"
+                    className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
+                  >
+                    Last Name
+                  </Label>
+                  <Input
+                    id="lastName"
+                    type="text"
+                    name="lastName"
+                    required
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    className="flex items-center w-64 h-10 pl-3 text-sm font-normal text-gray-600 bg-white border border-gray-300 rounded shadow focus:outline-none focus:border focus:border-gray-700"
+                    placeholder="Last Name"
+                  />
+                </div>
+                <div className="flex flex-col md:mr-16">
+                  <Label
+                    htmlFor="guests"
+                    className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
+                  >
+                    How Many Guests
+                  </Label>
+                  <Input
+                    id="guests"
+                    type="number"
+                    name="guests"
+                    min={1}
+                    max={4}
+                    required
+                    value={guests}
+                    onChange={(e) => setGuests(e.target.value)}
+                    className="flex items-center w-64 h-10 pl-3 text-sm font-normal text-gray-600 bg-white border border-gray-300 rounded shadow focus:outline-none focus:border focus:border-gray-700"
+                    placeholder="First Name"
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col mt-6 md:flex-row items-between md:items-center md:justify-between">
+                <div className="flex flex-col md:mr-16">
+                  <Label
+                    htmlFor="startDate"
+                    className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
+                  >
+                    Check In
+                  </Label>
+                  <Input
+                    id="startDate"
+                    type="date"
+                    name="startDate"
+                    required
+                    value={startDate}
+                    onChange={(e) => setStartDate(e.target.value)}
+                    className="flex items-center w-64 h-10 pl-3 text-sm font-normal text-gray-600 bg-white border border-gray-300 rounded shadow focus:outline-none focus:border focus:border-gray-700"
+                  />
+                </div>
+                <div className="flex flex-col md:mr-16">
+                  <Label
+                    htmlFor="endDate"
+                    className="mb-2 text-sm font-bold leading-tight tracking-normal text-gray-800"
+                  >
+                    Check Out
+                  </Label>
+                  <Input
+                    id="endDate"
+                    type="date"
+                    name="endDate"
+                    required
+                    value={endDate}
+                    onChange={(e) => setEndDate(e.target.value)}
+                    className="flex items-center w-64 h-10 pl-3 text-sm font-normal text-gray-600 bg-white border border-gray-300 rounded shadow focus:outline-none focus:border focus:border-gray-700"
+                  />
+                </div>
+              </div>
+
+              <Button
+                formAction={bookingAction}
+                className="w-full h-12 px-4 py-2 mt-4 text-sm text-white bg-red-500 rounded-lg hover:bg-gray-400"
+              >
+                Submit
+              </Button>
+            </form>
+          </div>
         </div>
       </div>
     </Fragment>

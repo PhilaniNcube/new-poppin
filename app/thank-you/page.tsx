@@ -27,8 +27,7 @@ export default function Component() {
         Thank You!
       </h2>
       <p className="max-w-lg text-center text-green-700 dark:text-green-300">
-        Your form has been successfully submitted. We appreciate your time and
-        effort.
+      Thank you for your enquiry. Please expect a response from us within 24 hours.
       </p>
       <Link href="/">
         <Button

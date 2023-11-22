@@ -4,6 +4,7 @@
  */
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomeHero() {
   return (
@@ -27,12 +28,13 @@ export default function HomeHero() {
           <p className="max-w-lg mt-4 text-xl md:text-2xl">
             Open your doors to holiday goers and earn extra income.
           </p>
-          <Button
+          <Link
+            href="/contact"
             className="mt-6 px-8 py-3 text-base font-medium text-white bg-red-600 hover:bg-red-400 rounded-full"
-            variant="secondary"
+
           >
             List Now
-          </Button>
+          </Link>
         </div>
       </div>
       <div className="relative">
@@ -54,12 +56,13 @@ export default function HomeHero() {
           <p className="max-w-lg mt-4 text-xl md:text-2xl">
             Explore a wide range of accommodations for your next holiday.
           </p>
-          <Button
+          <Link
+            href="/properties"
             className="mt-6 px-8 py-3 text-base font-medium text-white bg-red-600 hover:bg-red-400 rounded-full"
-            variant="secondary"
+
           >
             Explore Now
-          </Button>
+          </Link>
         </div>
       </div>
     </section>
